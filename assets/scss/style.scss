@@ -1,0 +1,186 @@
+body {
+    background-color:rgb(26, 26, 26);
+    font-family: 'Yantramanav', sans-serif;
+}
+h1{
+    font-weight:500;
+}
+/*--Tipografia--*/
+$Title1:56px;
+$Title2:46px;
+$Title3:32px;
+$Title4:24px;
+$subTitle1: 32px;
+$subTitle2: 24px;
+$subTitle3: 14px;
+/*--Paleta de cores--*/
+$orange-padrao-escuro:#F89D24;
+$orange-padrao-claro:#FEC024;
+$cinza-padrao-escuro:#686868;
+$cinza-padrao-claro:#B5B5B5;
+/*--media para tablet--*/
+@media (min-width:769px){
+    .container{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    /*--banner informativo inicial--*/
+    main{
+        .logo{
+        margin:30px;
+            img{
+                width: 116px;
+                height: 95px;
+            }
+        }
+        .title{
+            font-size: $Title1;
+            color:#FFFFFF;
+            text-align: center;
+        }
+        p{
+            font-size: $subTitle2;
+            color: #B5B5B5;
+            text-align: center;
+            margin-top: 17px;    
+        }
+        #botoes{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 60px;
+            button{
+                display: block;
+                width: 169px;
+                height: 56px;
+                border:0;
+                padding: 15px;
+            } 
+            .button_int{
+                background: transparent;
+                border: 2px solid white;
+                color: white;
+                font-size: $subTitle3;
+                text-transform: uppercase;
+                margin-right: 30px;
+            }
+            .button_comp{
+                background-color: $orange-padrao-escuro;
+                color: white;
+                font-size: $subTitle3;
+                text-transform: uppercase;
+            }
+        }  
+    }
+}
+@media (min-width:426px) and (max-width:768px){
+    .container{
+        margin-left:36px;
+        margin-right:36px;
+    }
+    /*--banner informativo inicial--*/
+    main{
+        .logo{
+        margin:30px;
+            img{
+                width: 116px;
+                height: 95px;
+            }
+        }
+        .title{
+            font-size: $Title1;
+            color:#FFFFFF;
+            text-align: center;
+        }
+        p{
+            font-size: $subTitle2;
+            color: #B5B5B5;
+            text-align: center;
+            margin-top: 25px;    
+        }
+        #botoes{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button{
+                display: block;
+                width: 169px;
+                height: 56px;
+                border:0;
+                padding: 15px;
+            } 
+            .button_int{
+                background: transparent;
+                border: 2px solid white;
+                color: white;
+                font-size: $subTitle3;
+                text-transform: uppercase;
+                margin-right: 30px;
+            }
+            .button_comp{
+                background-color: $orange-padrao-escuro;
+                color: white;
+                font-size: $subTitle3;
+                text-transform: uppercase;
+            } 
+        }   
+    }
+}
+/*--media para mobile--*/
+@media (max-width:425px){
+    .container{
+        margin-left:36px;
+        margin-right:36px;
+    }
+    /*--estilos do banner informativo inicial--*/
+    main{
+        .logo{
+            margin:16px;
+        }
+        .title{
+            font-size: $Title2;
+            color:#FFFFFF;
+            text-align: center;
+        }
+        p{
+            font-size: $subTitle3;
+            color: #B5B5B5;
+            text-align: center;
+            margin-top: 35px;    
+        }
+        #botoes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 53px;
+            button{
+                display: block;
+                width: 169px;
+                height: 56px;
+                border:0;
+                padding: 15px;
+            } 
+            .button_int{
+                background: transparent;
+                border: 2px solid white;
+                color: white;
+                font-size: $subTitle3;
+                text-transform: uppercase;
+                margin-bottom: 24px;
+            }
+            .button_comp{
+                background-color: $orange-padrao-escuro;
+                color: white;
+                font-size: $subTitle3;
+                text-transform: uppercase;
+            } 
+        }
+        
+    }/*--estilos da apresnetação inicial--*/
+    section{
+        width: 100%;
+        background-color: #2C2C2C;
+        color: white;
+    }
+    
+}

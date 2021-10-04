@@ -1,0 +1,175 @@
+@charset "UTF-8";
+body {
+  background-color: #1a1a1a;
+  font-family: "Yantramanav", sans-serif;
+  box-sizing: border-box;
+}
+h1 {
+  font-weight: 500;
+}
+/*--Tipografia--*/
+/*--Paleta de cores--*/
+/*--media para tablet--*/
+@media (min-width: 769px) {
+  .container {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  /*--banner informativo inicial--*/
+  main .logo {
+    margin: 30px;
+  }
+  main .logo img {
+    width: 116px;
+    height: 95px;
+  }
+  main .title {
+    font-size: 56px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  main p {
+    font-size: 24px;
+    color: #B5B5B5;
+    text-align: center;
+    margin-top: 17px;
+  }
+  main #botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  main #botoes button {
+    display: block;
+    width: 169px;
+    height: 56px;
+    border: 0;
+    padding: 15px;
+  }
+  main #botoes .button_int {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+  main #botoes .button_comp {
+    background-color: #F89D24;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .container {
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+
+  /*--banner informativo inicial--*/
+  main .logo {
+    margin: 30px;
+  }
+  main .logo img {
+    width: 116px;
+    height: 95px;
+  }
+  main .title {
+    font-size: 56px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  main p {
+    font-size: 24px;
+    color: #B5B5B5;
+    text-align: center;
+    margin-top: 25px;
+  }
+  main #botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main #botoes button {
+    display: block;
+    width: 169px;
+    height: 56px;
+    border: 0;
+    padding: 15px;
+  }
+  main #botoes .button_int {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+  main #botoes .button_comp {
+    background-color: #F89D24;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
+/*--media para mobile--*/
+@media (max-width: 425px) {
+  .container {
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+
+  /*--estilos do banner informativo inicial--*/
+  main .logo {
+    margin: 16px;
+  }
+  main .title {
+    font-size: 46px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  main p {
+    font-size: 14px;
+    color: #B5B5B5;
+    text-align: center;
+    margin-top: 35px;
+  }
+  main #botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 53px;
+  }
+  main #botoes button {
+    display: block;
+    width: 169px;
+    height: 56px;
+    border: 0;
+    padding: 15px;
+  }
+  main #botoes .button_int {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  main #botoes .button_comp {
+    background-color: #F89D24;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  /*--estilos da apresnetação inicial--*/
+  section {
+    padding-left: 36px;
+    padding-right: 36px;
+    background-color: #2C2C2C;
+    color: white;
+  }
+}
