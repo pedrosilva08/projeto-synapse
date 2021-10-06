@@ -1,28 +1,51 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #1a1a1a;
   font-family: "Yantramanav", sans-serif;
-  box-sizing: border-box;
 }
+
 h1 {
   font-weight: 500;
 }
+
 /*--Tipografia--*/
 /*--Paleta de cores--*/
 /*--media para tablet--*/
 @media (min-width: 769px) {
-  .container {
-    margin-left: 80px;
-    margin-right: 80px;
+  /*--grupos de css padrões--*/
+  .service_button .button_int, main #botoes .button_int {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+
+  .service_button .button_comp, main #botoes .button_comp {
+    background-color: #F89D24;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
   }
 
   /*--banner informativo inicial--*/
-  main .logo {
-    margin: 30px;
+  header .logo {
+    margin: 27px 0px 0px 43px;
   }
-  main .logo img {
+  header .logo img {
     width: 116px;
     height: 95px;
+  }
+
+  main {
+    padding-bottom: 173px;
   }
   main .title {
     font-size: 56px;
@@ -48,7 +71,139 @@ h1 {
     border: 0;
     padding: 15px;
   }
-  main #botoes .button_int {
+  /*--estilos da apresentação inicial--*/
+  section {
+    width: 100%;
+    background-color: #2C2C2C;
+    color: #B5B5B5;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  section .service_description {
+    padding-right: 99px;
+    padding-top: 55px;
+    position: relative;
+    color: #B5B5B5;
+  }
+  section .service_description h2 {
+    font-size: 64px;
+    color: #FFFFFF;
+    font-weight: 400;
+  }
+  section .service_description p {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  section .service_description .service_border {
+    border-bottom: 1px solid #FEC024;
+    border-left: 1px solid #FEC024;
+    border-right: 1px solid #FEC024;
+    width: 180px;
+    height: 175px;
+    position: absolute;
+    left: -50px;
+    top: -40px;
+  }
+
+  .service {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service .service_items {
+    border: 1px solid #6E6E6E;
+    text-align: center;
+    padding: 24px;
+    max-width: 253px;
+    margin-bottom: 32px;
+  }
+  .service .service_items img {
+    width: 99px;
+    height: 96px;
+  }
+  .service .service_items h3 {
+    color: #F89D24;
+    text-align: left;
+    margin-top: 27px;
+  }
+  .service .service_items p {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 7px;
+  }
+
+  .service_button {
+    display: flex;
+    justify-content: start;
+  }
+  .service_button button {
+    display: block;
+    width: 169px;
+    height: 56px;
+    border: 0;
+  }
+  .service_button .button_int {
+    position: relative;
+    top: -100px;
+  }
+  .service_button .button_comp {
+    position: relative;
+    top: -100px;
+    right: 20px;
+  }
+
+  .value_area {
+    background-color: #1a1a1a;
+    display: flex;
+    font-size: 40.5px;
+    position: relative;
+    padding-bottom: 34px;
+  }
+  .value_area .value_content {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 50px;
+  }
+  .value_area .value_content p {
+    padding-top: 53px;
+    padding-bottom: 75px;
+  }
+  .value_area .value_price {
+    background-color: #F89D24;
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    left: 100px;
+    padding-top: 53px;
+    padding-bottom: 75px;
+  }
+  .value_area .value_price p {
+    font-size: 56px;
+  }
+  .value_area .value_price button {
+    display: block;
+    width: 203px;
+    height: 56px;
+    border: 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: white;
+    color: #F89D24;
+    border-radius: 5px;
+    margin: auto;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  /*--grupos de css padrões--*/
+  section .service_button .button_int, main #botoes .button_int {
     background: transparent;
     border: 2px solid white;
     color: white;
@@ -56,27 +211,28 @@ h1 {
     text-transform: uppercase;
     margin-right: 30px;
   }
-  main #botoes .button_comp {
+
+  section .service_button .button_comp, main #botoes .button_comp {
     background-color: #F89D24;
     color: white;
     font-size: 14px;
     text-transform: uppercase;
   }
-}
-@media (min-width: 426px) and (max-width: 768px) {
+
   .container {
     margin-left: 36px;
     margin-right: 36px;
   }
 
   /*--banner informativo inicial--*/
-  main .logo {
+  header .logo {
     margin: 30px;
   }
-  main .logo img {
+  header .logo img {
     width: 116px;
     height: 95px;
   }
+
   main .title {
     font-size: 56px;
     color: #FFFFFF;
@@ -99,33 +255,156 @@ h1 {
     height: 56px;
     border: 0;
     padding: 15px;
+    margin-top: 50px;
   }
-  main #botoes .button_int {
+  /*--estilos da apresentação inicial--*/
+  section {
+    width: 100%;
+    background-color: #2C2C2C;
+    color: #B5B5B5;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 58px;
+    margin-top: 50px;
+  }
+  section .service_description {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 40px;
+    position: relative;
+    color: #B5B5B5;
+  }
+  section .service_description h2 {
+    font-size: 56px;
+    color: #FFFFFF;
+    font-weight: 400;
+  }
+  section .service_description .service_border {
+    border-bottom: 1px solid #FEC024;
+    border-left: 1px solid #FEC024;
+    border-right: 1px solid #FEC024;
+    width: 120px;
+    height: 105px;
+    position: absolute;
+    left: 15px;
+    top: 0px;
+  }
+  section .service {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section .service .service_items {
+    border: 1px solid #6E6E6E;
+    text-align: center;
+    padding: 24px;
+    margin-bottom: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  section .service .service_items img {
+    width: 99px;
+    height: 96px;
+  }
+  section .service .service_items h3 {
+    color: #F89D24;
+    text-align: left;
+    margin-top: 27px;
+  }
+  section .service .service_items p {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 7px;
+  }
+  section .service_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section .service_button button {
+    display: block;
+    width: 169px;
+    height: 56px;
+    border: 0;
+    padding: 15px;
+  }
+  .value_area {
+    background-color: #1a1a1a;
+    display: flex;
+    font-size: 40.5px;
+    position: relative;
+  }
+  .value_area .value_content {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 50px;
+  }
+  .value_area .value_content p {
+    margin-top: 30px;
+    max-height: 180px;
+    overflow-y: scroll;
+  }
+  .value_area .value_price {
+    background-color: #F89D24;
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    left: 20px;
+    padding: 25px 60px;
+  }
+  .value_area .value_price button {
+    display: block;
+    width: 203px;
+    height: 56px;
+    border: 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: white;
+    color: #F89D24;
+    border-radius: 5px;
+    margin: auto;
+  }
+}
+/*--media para mobile--*/
+@media (max-width: 425px) {
+  section .service_button .button_int, main #botoes .button_int {
     background: transparent;
     border: 2px solid white;
     color: white;
     font-size: 14px;
     text-transform: uppercase;
-    margin-right: 30px;
+    margin-bottom: 24px;
   }
-  main #botoes .button_comp {
+
+  section .service_button .button_comp, main #botoes .button_comp {
     background-color: #F89D24;
     color: white;
     font-size: 14px;
     text-transform: uppercase;
   }
-}
-/*--media para mobile--*/
-@media (max-width: 425px) {
+
   .container {
     margin-left: 36px;
     margin-right: 36px;
   }
 
   /*--estilos do banner informativo inicial--*/
-  main .logo {
-    margin: 16px;
+  header {
+    height: 55px;
   }
+  header .logo {
+    padding: 16px;
+  }
+  header .logo img {
+    width: 44px;
+    height: 36px;
+  }
+
   main .title {
     font-size: 46px;
     color: #FFFFFF;
@@ -150,26 +429,112 @@ h1 {
     border: 0;
     padding: 15px;
   }
-  main #botoes .button_int {
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-    font-size: 14px;
-    text-transform: uppercase;
-    margin-bottom: 24px;
-  }
-  main #botoes .button_comp {
-    background-color: #F89D24;
-    color: white;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-
-  /*--estilos da apresnetação inicial--*/
+  /*--estilos da apresentação inicial--*/
   section {
-    padding-left: 36px;
-    padding-right: 36px;
+    width: 100%;
     background-color: #2C2C2C;
-    color: white;
+    color: #B5B5B5;
+    margin-top: 33px;
+    padding-bottom: 58px;
+  }
+  section .service_description {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 43px;
+    position: relative;
+    color: #B5B5B5;
+  }
+  section .service_description h2 {
+    font-size: 48px;
+    color: #FFFFFF;
+    font-weight: 400;
+  }
+  section .service_description .service_border {
+    border-bottom: 1px solid #F89D24;
+    border-left: 1px solid #F89D24;
+    border-right: 1px solid #F89D24;
+    width: 110px;
+    height: 105px;
+    position: absolute;
+    left: 15px;
+    top: -2px;
+  }
+  section .service {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  section .service .service_items {
+    border: 1px solid #6E6E6E;
+    margin-left: 53px;
+    margin-right: 54px;
+    margin-bottom: 32px;
+    text-align: center;
+    padding: 24px;
+  }
+  section .service .service_items img {
+    width: 99px;
+    height: 96px;
+  }
+  section .service .service_items h3 {
+    color: #F89D24;
+    text-align: left;
+    margin-top: 27px;
+  }
+  section .service .service_items p {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 7px;
+  }
+  section .service_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 53px;
+  }
+  section .service_button button {
+    display: block;
+    width: 169px;
+    height: 56px;
+    border: 0;
+    padding: 15px;
+  }
+  /*--estilos da area de valor do curso--*/
+  .value_area {
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    font-size: 40.5px;
+  }
+  .value_area .value_content {
+    padding: 45px 24px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 50px;
+  }
+  .value_area .value_price {
+    background-color: #F89D24;
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 62px;
+  }
+  .value_area .value_price p {
+    padding: 46px 60px 24px 60px;
+  }
+  .value_area .value_price button {
+    display: block;
+    width: 203px;
+    height: 56px;
+    border: 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: white;
+    color: #F89D24;
+    border-radius: 5px;
+    margin: auto;
   }
 }
