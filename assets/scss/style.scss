@@ -52,6 +52,7 @@ $cinza-padrao-claro:#B5B5B5;
     }
     main{
         padding-bottom: 173px;
+        background: transparent radial-gradient(closest-side at 96% 11%, #2C2C2C 0%, #1A1A1A 100%) 0% 0% no-repeat padding-box;
         .title{
             font-size: $Title1;
             color:#FFFFFF;
@@ -84,15 +85,16 @@ $cinza-padrao-claro:#B5B5B5;
         }  
     }
     /*--estilos da apresentação inicial--*/
-    section{
+    .service_area{
         width: 100%;
-        background-color: #2C2C2C;
+        background: transparent radial-gradient(closest-side at 96% 11%, #2C2C2C 0%, #1A1A1A 100%) 0% 0% no-repeat padding-box;
         color: #B5B5B5;
-        padding-top:40px;
         padding-left: 100px;
         padding-right: 100px;
+        padding-top: 40px;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
         .service_description{
             padding-right: 99px;
             padding-top: 55px;
@@ -182,21 +184,20 @@ $cinza-padrao-claro:#B5B5B5;
                 font-weight: 400;
                 line-height: 50px;
                 p{
-                    padding-top: 53px;
-                    padding-bottom: 75px;
+                    padding-top: 108px;
+                    padding-bottom: 124px;
                 }
             }
             .value_price{
-                background-color: $orange-padrao-escuro;
+                background-color: #F89D24;
                 color: #FFFFFF;
-                font-size: $Title2 + 2;
+                font-size: 48px;
                 font-weight: 400;
                 text-align: center;
-                position: relative;
                 width: 100%;
-                left: 100px;
                 padding-top: 53px;
                 padding-bottom: 75px;
+                margin-top: 45px;
                 p{
                     font-size: $Title1;
                 }
@@ -217,22 +218,26 @@ $cinza-padrao-claro:#B5B5B5;
         }
         /*--estilos da area de informações--*/
     .info_area{
-        background-image: url("../images/teacher\ bnw@2x.svg");
+        background: transparent url('../images/teacher\ bnw@2x.png') 0% 0% no-repeat padding-box;
         background-size: cover;
         background-position: center;
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr 2fr;
         padding: 127px 209px;
         padding-top: 127px;
         padding-left: 209px;
         padding-right: 209px;
+        width: 100%;
         .info_comp{
             display: flex;
             flex-direction: column;
+            color: white;
+            font-size: 1.5rem;
+            max-height:324px;
+            overflow-y: hidden;
             .info_c{
                background-color: #686868;
-               font-size: $subTitle3 + 2;
-               font-weight: 800;
+               font-weight: 600;
                 p{
                    padding-left: 30px;
                    padding-bottom: 20px;
@@ -242,12 +247,14 @@ $cinza-padrao-claro:#B5B5B5;
         }
         .info_text_desk{
             background-color: #262626;
-            padding: 16px;
-            overflow-y: scroll;
-            max-height:327px;
+            padding: 35px 80px 35px 80px;
+            max-height:324px;
+            overflow-y: hidden;
+            color: white;
             p{
-                font-size: $subTitle3 + 2;
+                font-size: 18px;
                 text-align: left;
+                padding-bottom: 10px;
             }
             .link_int{
                 font-size: $subTitle3;
@@ -256,14 +263,13 @@ $cinza-padrao-claro:#B5B5B5;
                 font-weight: 600;
                 text-decoration: none;
                 margin-left: 20px;
-                padding-top: 20px;
             }
             .link_comp{
                 font-size: $subTitle3;
                 color: #F89D24;
                 font-weight: 600;
                 text-decoration: none;
-                padding-top: 20px;
+                font-size: $subTitle3;
             }
 
         }
@@ -281,7 +287,7 @@ $cinza-padrao-claro:#B5B5B5;
     }
     /*--estilos da area de professores--*/
     .teachers{
-        background-color: #0C0C0C;
+        background: transparent radial-gradient(closest-side at 96% 11%, #2C2C2C 0%, #1A1A1A 100%) 0% 0% no-repeat padding-box;
         padding-left: 24px;
         padding-right: 24px;
         position: relative;
@@ -325,16 +331,11 @@ $cinza-padrao-claro:#B5B5B5;
         }
         .teacher_group{
             display: grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(3,1fr);
             grid-gap: 20px;
             padding-top: 30px;
-            .teacher_g1{
-                grid-column: 1 / 3;
-                grid-row: 1 / 2;
-            }
-            .teacher_g3{
-                grid-column: 1 / 3;
-                grid-row: 3 / 4;
+            .teachers_g1{
+                grid-row: 1/4;
             }
         }
         .teachers_button{
@@ -364,20 +365,20 @@ $cinza-padrao-claro:#B5B5B5;
         background-image: url("../images/opinion@2x.png");
         background-size: cover;
         background-position: center;
+        padding-right: 46px;
+        padding-left: 46px;
+        padding-top: 54px;
+        padding-bottom: 54px;
         p{
            font-size:$Title3 + 8.5;
            color: #FFFFFF; 
-           padding-right: 24px;
-           padding-left: 24px;
-           padding-top: 60px;
            padding-bottom: 24px;
            text-align: center;
         }
         .comments_name{
-            text-align: center;
+            text-align: right;
             font-size: $subTitle3 + 4;
             color:#F89D24;
-            padding-bottom: 115px;
         }
     } 
     /*--estilos da area de capacidade de aprender--*/
@@ -386,8 +387,9 @@ $cinza-padrao-claro:#B5B5B5;
         grid-template-columns:50% 50%;
         grid-gap: 10px;
         padding-bottom: 136px;
+        background: transparent radial-gradient(closest-side at 96% 11%, #2C2C2C 0%, #1A1A1A 100%) 0% 0% no-repeat padding-box;
         .cap_description{
-            padding-left: 24px;
+            padding-left: 196px;
             padding-right: 24px;
             padding-top: 43px;
             position:relative;
@@ -404,7 +406,7 @@ $cinza-padrao-claro:#B5B5B5;
                 width: 110px;
                 height: 105px;
                 position: absolute;
-                left: 15px;
+                left: 180px;
                 top:-2px;
             }
             p{
@@ -418,7 +420,7 @@ $cinza-padrao-claro:#B5B5B5;
             position: relative;
             min-height: 350px;
                 .cap_met_content{
-                    overflow-y: scroll;
+                    padding-bottom: 20px;
                     h3{
                         font-size: $subTitle3;
                         color: #F89D24;
@@ -428,19 +430,20 @@ $cinza-padrao-claro:#B5B5B5;
                         height: 12px;
                         border: 1px solid #F89D24;
                         border-radius: 50%;
-                        position: relative;
-                        left: -20px;
-                        top: 15px;
+                        position: absolute;
+                        left: -5px;
                     }
                     p{
                         color: #B5B5B5;
                         font-size: $subTitle3 + 2;
+                        padding-right: 159px;
                     }
                 }
         }
         .cap_button{
             display: flex;
-            padding-left: 24px;
+            padding-left: 196px;
+            padding-top: 62px;
                 button{
                     display: block;
                     min-width: 169px;
@@ -458,11 +461,10 @@ $cinza-padrao-claro:#B5B5B5;
     }
     /*--estilos da area publico alvo--*/
     .question_area{
-        background-image: url("../images/negociando.png");
-        background-position: center;
-        background-size: cover;
-        background-color: black;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
         .question_description{
+            background: transparent radial-gradient(closest-side at 96% 11%, #2C2C2C 0%, #1A1A1A 100%) 0% 0% no-repeat padding-box;
             padding-left: 24px;
             padding-right: 24px;
             padding-top: 43px;
@@ -481,7 +483,7 @@ $cinza-padrao-claro:#B5B5B5;
                 width: 110px;
                 height: 105px;
                 position: absolute;
-                left: 15px;
+                left: 170px;
                 top:-1px;
             }
             p{
@@ -509,6 +511,13 @@ $cinza-padrao-claro:#B5B5B5;
                 .question_button_comp{
                     @extend %button_comp_desk;
                 }
+        }
+        .question_img{
+            background-image: url("../images/negociando@2x.png");
+            background-position: center;
+            background-size: cover;
+            grid-column: 1/2;
+            grid-row: 1/2;
         }
     }
      footer{
@@ -551,6 +560,7 @@ $cinza-padrao-claro:#B5B5B5;
         }
     }
     main{
+        background: transparent radial-gradient(closest-side at 96% 11%, #2C2C2C 0%, #1A1A1A 100%) 0% 0% no-repeat padding-box;
         .title{
             font-size: $Title1;
             color:#FFFFFF;
@@ -566,6 +576,7 @@ $cinza-padrao-claro:#B5B5B5;
             display: flex;
             align-items: center;
             justify-content: center;
+            padding-bottom: 80px;
             button{
                 display: block;
                 width: 169px;
@@ -585,7 +596,7 @@ $cinza-padrao-claro:#B5B5B5;
     /*--estilos da apresentação inicial--*/
     section{
         width: 100%;
-        background-color: #2C2C2C;
+        background: transparent radial-gradient(closest-side at 96% 11%, #2C2C2C 0%, #1A1A1A 100%) 0% 0% no-repeat padding-box;
         color: #B5B5B5;
         padding-left: 20px;
         padding-right: 20px;
@@ -713,6 +724,7 @@ $cinza-padrao-claro:#B5B5B5;
         padding-top: 58px;
         padding-left: 100px;
         padding-right: 100px;
+        background: transparent url('../images/teacher\ bnw@2x.png') 0% 0% no-repeat padding-box;
         .info_comp{
             display: flex;
             flex-direction: column;
@@ -768,7 +780,7 @@ $cinza-padrao-claro:#B5B5B5;
     }
     /*--estilos da area de professores--*/
     .teachers{
-        background-color: #0C0C0C;
+        background-color: #0C0C0C; background: transparent radial-gradient(closest-side at 96% 11%, #2C2C2C 0%, #1A1A1A 100%) 0% 0% no-repeat padding-box;
         padding-left: 24px;
         padding-right: 24px;
         position: relative;
@@ -808,11 +820,13 @@ $cinza-padrao-claro:#B5B5B5;
                 font-size: $subTitle3 + 2;
                 padding-bottom: 24px;
                 padding-top: 11px;
+                max-height: 500px;
+                overflow-y: scroll;
             }
         }
         .teacher_group{
             display: grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(3,1fr);
             grid-gap: 20px;
             padding-top: 30px;
         }
@@ -967,6 +981,9 @@ $cinza-padrao-claro:#B5B5B5;
                 font-size: $subTitle3 - 0.5;
                 padding-top: 14px;
             }
+            img{
+                display:none;
+            }
         }
         .question_button{
             display: flex;
@@ -1032,6 +1049,7 @@ $cinza-padrao-claro:#B5B5B5;
     }
     main{
         padding-bottom: 33px;
+        background: transparent radial-gradient(closest-side at 96% 11%, #2C2C2C 0%, #1A1A1A 100%) 0% 0% no-repeat padding-box;
         .title{
             font-size: $Title2;
             color:#FFFFFF;
@@ -1067,7 +1085,7 @@ $cinza-padrao-claro:#B5B5B5;
     /*--estilos da apresentação inicial--*/
     section{
         width: 100%;
-        background-color: #2C2C2C;
+        background: transparent radial-gradient(closest-side at 96% 11%, #2C2C2C 0%, #1A1A1A 100%) 0% 0% no-repeat padding-box;
         color: #B5B5B5;
             .service_description{
                 padding-left: 24px;
@@ -1184,6 +1202,7 @@ $cinza-padrao-claro:#B5B5B5;
         background-size: cover;
         background-position: left;
         position: relative;
+        background: transparent url('../images/teacher\ bnw@2x.png') 0% 0% no-repeat padding-box;
         .info_title{
             color: white;
             font-size: $Title2 + 2;
@@ -1264,7 +1283,7 @@ $cinza-padrao-claro:#B5B5B5;
     }
     /*--estilos da area de professores--*/
     .teachers{
-        background-color: #0C0C0C;
+        background: transparent radial-gradient(closest-side at 96% 11%, #2C2C2C 0%, #1A1A1A 100%) 0% 0% no-repeat padding-box;
         padding-left: 24px;
         padding-right: 24px;
         position: relative;
@@ -1364,7 +1383,7 @@ $cinza-padrao-claro:#B5B5B5;
             position:relative;
             color: #B5B5B5;
             h2{
-                font-size:$Title1 + 8;
+                font-size:48px;
                 color: #FFFFFF;
                 font-weight: 400;
             }
@@ -1459,6 +1478,9 @@ $cinza-padrao-claro:#B5B5B5;
                 color: #B5B5B5;
                 font-size: $subTitle3 - 0.5;
                 padding-top: 14px;
+            }
+            img{
+                display:none;
             }
         }
         .question_button{
