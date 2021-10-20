@@ -340,26 +340,55 @@ h1 {
     border: 0;
     padding: 15px;
   }
-  /*--estilos da area de comentarios--*/
-  .comments_area {
-    background-image: url("../images/opinion@2x.png");
-    background-size: cover;
+  /*-- criação do slider do comments* --*/
+  .slider--area {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .slider--area .slider {
+    flex: 1;
+    overflow: hidden;
+  }
+  .slider--area .slider .slider--width {
+    height: 100%;
+    display: flex;
+    transition: all ease 0.3s;
+  }
+  .slider--area .slider .slider--width .slider--item {
+    width: 100vw;
+    height: inherit;
     background-position: center;
-    padding-right: 46px;
-    padding-left: 46px;
-    padding-top: 54px;
-    padding-bottom: 54px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0px 0px 1px #333;
   }
-  .comments_area p {
-    font-size: 40.5px;
-    color: #FFFFFF;
-    padding-bottom: 24px;
+  .slider--area .slider .slider--width .slider--item .slider--container {
+    padding: 60px;
     text-align: center;
+    font-size: 56px;
   }
-  .comments_area .comments_name {
-    text-align: right;
-    font-size: 18px;
-    color: #F89D24;
+  .slider--area .slider .slider--controls {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .slider--area .slider .slider--controls img {
+    border: 0;
+    background: transparent;
+    outline: 0;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    text-shadow: 0px 0px 1px white;
   }
 
   /*--estilos da area de capacidade de aprender--*/
@@ -800,31 +829,59 @@ h1 {
   }
   .teachers .teachers_button button {
     display: block;
-    width: 169px;
     height: 56px;
     border: 0;
     padding: 15px;
   }
-  /*--estilos da area de comentarios--*/
-  .comments_area {
-    background-image: url("../images/opinion@2x.png");
-    background-size: cover;
+  /*-- criação do slider do comments* --*/
+  .slider--area {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .slider--area .slider {
+    flex: 1;
+    overflow: hidden;
+  }
+  .slider--area .slider .slider--width {
+    height: 100%;
+    display: flex;
+    transition: all ease 0.3s;
+  }
+  .slider--area .slider .slider--width .slider--item {
+    width: 100vw;
+    height: inherit;
     background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0px 0px 1px #333;
   }
-  .comments_area p {
-    font-size: 40.5px;
-    color: #FFFFFF;
-    padding-right: 24px;
-    padding-left: 24px;
-    padding-top: 60px;
-    padding-bottom: 24px;
+  .slider--area .slider .slider--width .slider--item .slider--container {
+    padding: 60px;
     text-align: center;
+    font-size: 56px;
   }
-  .comments_area .comments_name {
-    text-align: center;
-    font-size: 18px;
-    color: #F89D24;
-    padding-bottom: 115px;
+  .slider--area .slider .slider--controls {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .slider--area .slider .slider--controls img {
+    border: 0;
+    background: transparent;
+    outline: 0;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    text-shadow: 0px 0px 1px white;
   }
 
   /*--estilos da area de capacidade de aprender--*/
@@ -1273,26 +1330,55 @@ h1 {
     border: 0;
     padding: 15px;
   }
-  /*--estilos da area de comentarios--*/
-  .comments_area {
-    background-image: url("../images/opinion@2x.png");
-    background-size: cover;
+  /*-- criação do slider do comments* --*/
+  .slider--area {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .slider--area .slider {
+    flex: 1;
+    overflow: hidden;
+  }
+  .slider--area .slider .slider--width {
+    height: 100%;
+    display: flex;
+    transition: all ease 0.3s;
+  }
+  .slider--area .slider .slider--width .slider--item {
+    width: 100vw;
+    height: inherit;
     background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0px 0px 1px #333;
   }
-  .comments_area p {
+  .slider--area .slider .slider--width .slider--item .slider--container {
+    padding: 40px;
+    text-align: center;
     font-size: 40.5px;
-    color: #FFFFFF;
-    padding-right: 24px;
-    padding-left: 24px;
-    padding-top: 60px;
-    padding-bottom: 24px;
-    text-align: center;
   }
-  .comments_area .comments_name {
-    text-align: center;
-    font-size: 18px;
-    color: #F89D24;
-    padding-bottom: 115px;
+  .slider--area .slider .slider--controls {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .slider--area .slider .slider--controls img {
+    border: 0;
+    background: transparent;
+    outline: 0;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    text-shadow: 0px 0px 1px white;
   }
 
   /*--estilos da area de capacidade de aprender--*/

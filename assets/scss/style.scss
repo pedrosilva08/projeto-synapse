@@ -10,6 +10,7 @@ body {
 h1{
     font-weight:500;
 }
+
 /*--Tipografia--*/
 $Title1:56px;
 $Title2:46px;
@@ -360,27 +361,56 @@ $cinza-padrao-claro:#B5B5B5;
                 }
         }
     }
-    /*--estilos da area de comentarios--*/
-    .comments_area{
-        background-image: url("../images/opinion@2x.png");
-        background-size: cover;
-        background-position: center;
-        padding-right: 46px;
-        padding-left: 46px;
-        padding-top: 54px;
-        padding-bottom: 54px;
-        p{
-           font-size:$Title3 + 8.5;
-           color: #FFFFFF; 
-           padding-bottom: 24px;
-           text-align: center;
+    /*-- criação do slider do comments* --*/
+.slider--area{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    .slider{
+        flex: 1;
+        overflow: hidden;
+        .slider--width{
+            height: 100%;
+            display: flex;
+            transition: all ease 0.3s;
+            .slider--item{
+                width: 100vw; 
+                height: inherit;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                text-shadow: 0px 0px 1px #333;
+                .slider--container{
+                    padding: 60px;
+                    text-align: center;
+                    font-size: 56px;
+                }
+            }    
         }
-        .comments_name{
-            text-align: right;
-            font-size: $subTitle3 + 4;
-            color:#F89D24;
+        .slider--controls{
+            position: absolute;
+            z-index: 99;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+                img{
+                border: 0;
+                background: transparent;
+                outline: 0;
+                overflow: hidden;
+                width: 60px;
+                height: 60px;
+                text-shadow: 0px 0px 1px white;
+            }
         }
-    } 
+    }
+}
     /*--estilos da area de capacidade de aprender--*/
     .cap_area{
         display: grid;
@@ -838,8 +868,7 @@ $cinza-padrao-claro:#B5B5B5;
             padding-top: 41px;
             padding-bottom: 99px;
                 button{
-                    display: block;
-                    width: 169px;
+                    display: block; 
                     height: 56px;
                     border:0;
                     padding: 15px;
@@ -852,27 +881,56 @@ $cinza-padrao-claro:#B5B5B5;
                 }
         }
     }
-    /*--estilos da area de comentarios--*/
-    .comments_area{
-        background-image: url("../images/opinion@2x.png");
-        background-size: cover;
-        background-position: center;
-        p{
-           font-size:$Title3 + 8.5;
-           color: #FFFFFF; 
-           padding-right: 24px;
-           padding-left: 24px;
-           padding-top: 60px;
-           padding-bottom: 24px;
-           text-align: center;
+    /*-- criação do slider do comments* --*/
+.slider--area{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    .slider{
+        flex: 1;
+        overflow: hidden;
+        .slider--width{
+            height: 100%;
+            display: flex;
+            transition: all ease 0.3s;
+            .slider--item{
+                width: 100vw; 
+                height: inherit;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                text-shadow: 0px 0px 1px #333;
+                .slider--container{
+                    padding: 60px;
+                    text-align: center;
+                    font-size: 56px;
+                }
+            }    
         }
-        .comments_name{
-            text-align: center;
-            font-size: $subTitle3 + 4;
-            color:#F89D24;
-            padding-bottom: 115px;
+        .slider--controls{
+            position: absolute;
+            z-index: 99;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+                img{
+                border: 0;
+                background: transparent;
+                outline: 0;
+                overflow: hidden;
+                width: 80px;
+                height: 80px;
+                text-shadow: 0px 0px 1px white;
+            }
         }
-    } 
+    }
+}
     /*--estilos da area de capacidade de aprender--*/
     .cap_area{
         display: grid;
@@ -1352,27 +1410,56 @@ $cinza-padrao-claro:#B5B5B5;
                 }
         }
     }
-    /*--estilos da area de comentarios--*/
-    .comments_area{
-        background-image: url("../images/opinion@2x.png");
-        background-size: cover;
-        background-position: center;
-        p{
-           font-size:$Title3 + 8.5;
-           color: #FFFFFF; 
-           padding-right: 24px;
-           padding-left: 24px;
-           padding-top: 60px;
-           padding-bottom: 24px;
-           text-align: center;
+    /*-- criação do slider do comments* --*/
+    .slider--area{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height:100vh;
+        .slider{
+            flex: 1;
+            overflow: hidden;
+            .slider--width{
+                height: 100%;
+                display: flex;
+                transition: all ease 0.3s;
+                .slider--item{
+                    width: 100vw; 
+                    height: inherit;
+                    background-position: center;
+                    background-size: cover;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    text-shadow: 0px 0px 1px #333;
+                    .slider--container{
+                        padding: 40px;
+                        text-align: center;
+                        font-size: 40.5px;
+                    }
+                }    
+            }
+            .slider--controls{
+                position: absolute;
+                z-index: 99;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                    img{
+                    border: 0;
+                    background: transparent;
+                    outline: 0;
+                    overflow: hidden;
+                    width: 40px;
+                    height: 40px;
+                    text-shadow: 0px 0px 1px white;
+                }
+            }
         }
-        .comments_name{
-            text-align: center;
-            font-size: $subTitle3 + 4;
-            color:#F89D24;
-            padding-bottom: 115px;
-        }
-    }
+}
     /*--estilos da area de capacidade de aprender--*/
     .cap_area{
         .cap_description{
