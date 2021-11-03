@@ -11,6 +11,14 @@ h1{
     font-weight:500;
 }
 
+.border_comp{
+    height: 2px;
+    background: #F89D24;
+    margin-top: 10px;
+    transition: all 0.5s;
+    display: block;
+}
+
 /*--Tipografia--*/
 $Title1:56px;
 $Title2:46px;
@@ -239,6 +247,8 @@ $cinza-padrao-claro:#B5B5B5;
             .info_c{
                background-color: #686868;
                font-weight: 600;
+               cursor: pointer;
+               max-height: 200px;
                 p{
                    padding-left: 30px;
                    padding-bottom: 20px;
@@ -1293,7 +1303,7 @@ $cinza-padrao-claro:#B5B5B5;
                    padding-top: 13px;
                }
             }
-            .info_text{
+            .info_text_desk{
                 border-top:1px solid $orange-padrao-claro;
                 border-bottom:1px solid $orange-padrao-claro;
                 p{

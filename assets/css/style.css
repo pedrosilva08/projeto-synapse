@@ -14,6 +14,14 @@ h1 {
   font-weight: 500;
 }
 
+.border_comp {
+  height: 2px;
+  background: #F89D24;
+  margin-top: 10px;
+  transition: all 0.5s;
+  display: block;
+}
+
 /*--Tipografia--*/
 /*--Paleta de cores--*/
 /*--media para tablet--*/
@@ -228,6 +236,8 @@ h1 {
   .info_area .info_comp .info_c {
     background-color: #686868;
     font-weight: 600;
+    cursor: pointer;
+    max-height: 200px;
   }
   .info_area .info_comp .info_c p {
     padding-left: 30px;
@@ -1228,11 +1238,11 @@ h1 {
     padding-bottom: 10px;
     padding-top: 13px;
   }
-  .info_area .info_comp .info_text {
+  .info_area .info_comp .info_text_desk {
     border-top: 1px solid #FEC024;
     border-bottom: 1px solid #FEC024;
   }
-  .info_area .info_comp .info_text p {
+  .info_area .info_comp .info_text_desk p {
     font-size: 16px;
     padding: 24px 16px;
     background-color: #262626;

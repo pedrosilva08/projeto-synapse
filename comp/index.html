@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competências</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="comp">
+        <div class="comp_mobile">
+            <div class="comp_mobile_itens">
+                <div class="comp_item active">
+                    <div class="comp_item_header">Competência 1</div>
+                    <div class="comp_item_body"></div>
+                </div>
+                <div class="comp_item">
+                    <div class="comp_item_header">Competência 2</div>
+                    <div class="comp_item_body"></div>
+                </div>
+                <div class="comp_item">
+                    <div class="comp_item_header">Competência 3</div>
+                    <div class="comp_item_body"></div>
+                </div>
+                <div class="comp_item">
+                    <div class="comp_item_header">Competência 4</div>
+                    <div class="comp_item_body"></div>
+                </div>
+            </div>
+        </div>
+        <div id="comp_desk">
+            <div class="comp_area">
+                <div class="comp_item_lat">
+                    <div class="comp_item border-1 show" onclick="alteraCompetencia(1)">
+                       <p>Competência 1</p>
+                    </div>
+                    <div class="comp_item border-2" onclick="alteraCompetencia(2)">
+                        <p>Competência 2</p>
+                    </div>
+                    <div class="comp_item border-3" onclick="alteraCompetencia(3)">
+                        <p>Competência 3</p>
+                    </div>
+                    <div class="comp_item border-4" onclick="alteraCompetencia(4)">
+                        <p>Competência 4</p>
+                    </div>
+                </div>
+                <div class="comp_item_content">
+                    <p>Suspendisse nec enim sodales, lacinia leo nec, gravida dui. Phasellus interdum laoreet tellus, non porta dolor. Sed vestibulum velit lacus, vel finibus mauris dignissim lacinia. Mauris volutpat massa.</p>
+                    <div class="comp_item_link">
+                    <a href="#" class="link_int">tenho interesse</a>
+                    <a href="#" class="link_comp">COMPRE AGORA</a>
+                    </div>
+                </div>
+
+            </div>   
+        </div>
+    </div>
+    <script src="comp.js"></script>
+</body>
+</html>
