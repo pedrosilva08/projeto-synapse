@@ -35,48 +35,129 @@
     }
     .comp_area{
         width: 100%;
-        max-width: 961px;
-        height: 362px;
         margin:auto;
         display: flex;
+        max-height: 362px;
         justify-content:center;
         align-items: center;
     }
     .comp_item_lat{
         background-color:#686868;
-        font-size:32px;
+        font-size:30px;
         text-align:left;
         font-family:Arial, Helvetica, sans-serif;
         color:white;
-        height: inherit;
-    }
-    .comp_item{
-        height: 25%;
+        align-items:center;
+        min-width: 300px;
+        min-height:362px;
     }
     .comp_item_content{
         background-color: #262626;
-        padding: 110px 72px;
         color: #FFFFFF;
         font-size: 18px;
-        height: inherit;
+        padding: 20px;
+        min-width: 185.50px;
+        min-height:362px;
+        overflow: hidden;
     }
     .comp_item p{
-        margin:40px 121px 40px 60px;
-        width: 220px;
         cursor: pointer;
+        margin: auto;
+        padding: 20px;
     }
     .comp_item_link{
         margin-top: 10px; 
     }
 }
 @media(min-width:425px) and (max-width:767px){
-    .comp_mobile{
+    #comp_desk{
         display: none;
+    } 
+    .comp_mobile{
+        background-image: url(images/background/teacher\ bnw@2x.png);
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 32px 24px;
+        display: flex;
+        flex-direction: column;
     }
+    .comp_mobile button{
+        color: #ffffff;
+        background-color: #686868;
+        font-size: 24px;
+        font-weight: bold;
+        text-align:center;
+        padding: 13px 0px 10px 0px;
+        border: none;
+        outline: none;
+    }
+    .comp_accordion{
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 24px;
+        width: 100%;
+        text-align: center;
+      }
+      .comp_content{
+        background-color: #262626;
+        color: #FFFFFF;
+        font-size: 24px;
+        display:none;
+        padding: 16px 24px;
+        overflow: hidden;
+        transition: 0.5s ease-out;
+        border-top: 1px solid #F89D24;
+        border-bottom: 1px solid #F89D24;
+      }
     
 }
 @media(max-width:424px){
-    .comp_desk{
+    #comp_desk{
         display: none;
+    } 
+    .comp_mobile{
+        background-image: url(images/background/teacher\ bnw@2x.png);
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 32px 24px;
+        display: flex;
+        flex-direction: column;
     }
+    .comp_mobile button{
+        color: #ffffff;
+        background-color: #686868;
+        font-size: 18px;
+        font-weight: bold;
+        text-align:left;
+        padding: 13px 0px 10px 16px;
+        border: none;
+        outline: none;
+    }
+    .active{
+        background-color: #F89D24;
+    }
+    .comp_accordion{
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+      }
+      .comp_content{
+        background-color: #262626;
+        color: #FFFFFF;
+        font-size: 18px;
+        display:none;
+        padding: 16px 24px;
+        overflow: hidden;
+        transition: 0.5s ease-out;
+        border-top: 1px solid #F89D24;
+        border-bottom: 1px solid #F89D24;
+        font-family: Arial, Helvetica, sans-serif;
+      }
 }

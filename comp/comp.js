@@ -1,41 +1,39 @@
-let itens = document.querySelector('.comp_Item');
-let border = document.querySelector('.border');
-let border1 = document.querySelector('.border-1');
-let border2 = document.querySelector('.border-2');
-let border3 =  document.querySelector('.border-3');
-let border4 = document.querySelector('.border-4')
+var content = document.querySelector('.comp_item_content p');
+var b1 = document.querySelector('.border-1')
+var b2 = document.querySelector('.border-2')
+var b3 = document.querySelector('.border-3')
+var b4 = document.querySelector('.border-4')
+//-----adionando border nos itens------
 
-border1.addEventListener('click', alteraBorda1);
-border2.addEventListener('click', alteraBorda2);
-border3.addEventListener('click', alteraBorda3);
-border4.addEventListener('click', alteraBorda4);
+function remove_all_class(show){
+    var seletor = document.querySelectorAll('.' + 'show');
+    seletor.forEach(function(itens){
+        itens.classList.remove('show');
+    });
+}
+b1.addEventListener('click',alteraBorda1);
+b2.addEventListener('click',alteraBorda2);
+b3.addEventListener('click',alteraBorda3);
+b4.addEventListener('click',alteraBorda4);
 
-function alteraBorda1(){
-    border1.classList.add('show'); 
-    border2.classList.remove('show');
-    border3.classList.remove('show');
-    border4.classList.remove('show');
+function alteraBorda1() {
+    remove_all_class('show');
+    b1.classList.add('show');
+}
+function alteraBorda2() {
+    remove_all_class('show');
+    b2.classList.add('show');
+}
+function alteraBorda3() {
+    remove_all_class('show');
+    b3.classList.add('show');
+}
+function alteraBorda4() {
+    remove_all_class('show');
+    b4.classList.add('show');
 }
 
-function alteraBorda2(){
-    border1.classList.remove('show'); 
-    border2.classList.add('show');
-    border3.classList.remove('show');
-    border4.classList.remove('show');
-}
-
-function alteraBorda3(){
-    border1.classList.remove('show'); 
-    border2.classList.remove('show');
-    border3.classList.add('show');
-    border4.classList.remove('show');
-}
-function alteraBorda4(){
-    border1.classList.remove('show'); 
-    border2.classList.remove('show');
-    border3.classList.remove('show');
-    border4.classList.add('show');
-}
+//-----tornando o texto dinâmico------------------------------------------
 function alteraCompetencia(index){ 
     let para = document.querySelector('.comp_item_content p');
     if(index === 1){
@@ -51,4 +49,22 @@ function alteraCompetencia(index){
         para.innerHTML = '';
         para.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque finibus justo, eu dignissim leo tristique vel.lacinia leo nec, gravida dui. Phasellus interdum laoreet tellus, Bibendum est ut. ';
     }
+    content.appendChild(para);
 }
+
+//-----------------------para mobile--------------------
+var acc = document.querySelectorAll('.comp_accordeon');
+var i;
+for(i = 0; i < acc.length;i++){
+    acc[i].addEventListener('click',function(){
+        //se tiver essa class ele remove e retorna false senão adiciona e retorna true
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+
+        if(content.style.display === "none"){
+            content.style.display = "block";
+        }else{
+            content.style.display = "none";
+        }
+    }
+    )};
